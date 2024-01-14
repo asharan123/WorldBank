@@ -1,0 +1,25 @@
+<!-- dashboard/templates/dashboard/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Home</title>
+
+    <script src="https://cdn.flexmonster.com/flexmonster.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.flexmonster.com/demo.css">
+
+</head>
+<body>
+    <h1>Welcome to the Dashboard App</h1>
+    <p>This is the home page for the Economic Dashboard</p>
+    <p><a href="{% url 'dashboard' %}">View GDP Table</a></p>
+    <p><a href="{% url 'gni-dashboard' %}">View GNI Table</a></p>
+    <p><a href="{% url 'low_income_countries-dashboard' %}">View Low Income Countries Table</a></p>
+    <p><a href="{% url 'low_middle_income_countries-dashboard' %}">View Low Middle Income Countries Table</a></p>
+    <p><a href="{% url 'upper_middle_income_countries-dashboard' %}">View Upper Middle Income Countries Table</a></p>
+    <p><a href="{% url 'high_income_countries-dashboard' %}">View High Income Countries Table</a></p>
+</body>
+</html>
